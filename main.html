@@ -11,15 +11,25 @@
 <body>
     <!---topbar-->
     <div class="topbar">
-        <div class="topbar__content">               
-        <a href="#" class="topbar__link"><span class="topbar__item">Home</span></a>
+        <div class="topbar__content" id="myTopbar">               
+        <a href="#home" class="topbar__link"><span class="topbar__item">Home</span></a>
         <a href="#service" class="topbar__link">Service</a>
         <a href="#" class="topbar__link">Works</a>
         <a href="#" class="topbar__link">Contacts</a>
+        <a href="javascript:void(0);" onclick="myFunction()" class="topbar__icon"><i class="fas fa-bars"></i></a>
         </div>
+        <script>
+        function myFunction(){
+            var x = document.getElementById("myTopbar");
+            if (x.className === "topbar") {
+              x.className += " responsive";
+            } else {
+              x.className = "topbar";
+            }
+          }</script>
     </div>
     <!--main-->
-    <div class="main">
+    <div class="main" id="home">
         <div class="main__content">
             <div class="main__title">  
                 <p><i class="fas fa-tooth"></i>Galyas</p>

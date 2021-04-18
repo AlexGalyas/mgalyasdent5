@@ -27,10 +27,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     &__item{
         color: rgb(255, 217, 0);
     }
-    &__item:hover{
-        transition: 0.2s;
-        font-size: 22px;
-    }
+
     &__link {
         font-family: 'montserrat';
         color: #fff;
@@ -39,13 +36,39 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         font-size: 20px;
         text-transform: uppercase;
     }
-    &__link:hover{
-        transition: 0.2s;
-        font-size: 22px;
+
+    &__icon{
+        display: none;
+    }
+    .fas{
+        color: rgb(255, 217, 0);
+        font-size: 25px;
+        padding: 8px;
     }
 }
+@media screen and (max-width: 600px) {
+    .topbar a:not(:first-child) {display: none;}
+    .topbar a.topbar__icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topbar.responsive {position: relative;}
+    .topbar.responsive .topbar__icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 .main {
-    background-image: url(../img/mykola.jpg);
+    background-image: url(../img/tooth.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left left;
@@ -60,7 +83,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     justify-content: center;
         text-transform: uppercase;
         font-size: 110px;
-        color: #fff;
+        color: #000;
         text-align: center;
         
         font-family: 'antonio';
@@ -69,14 +92,23 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 
     &__title {
+        background-color: rgba(0, 0, 0, 0.503);
         color: rgb(255, 217, 0);
         margin-bottom: 10px;
+        
     }
 
     &__undertitle {
         
     }
+}
 
+
+@media only screen and (max-width:600px){
+    div.main__content{
+        font-size: 40px;
+        
+    }
 }
 .service{
     display: flex;
