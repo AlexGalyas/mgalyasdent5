@@ -17,15 +17,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 
 
+
 .topbar {
     position: fixed;
     width: 100%;
-    background-color: #000;
+    background-color:rgba(0, 0, 0, 0.503);   ;
     &__content {
-        overflow: hidden;   
+        overflow: hidden; 
+        
     }
     &__item{
         color: rgb(255, 217, 0);
+        
     }
 
     &__link {
@@ -66,6 +69,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
       display: block;
       text-align: left;
     }
+    div.topbar__link{
+        font-size: 15px;
+    }
   }
 .main {
     background-image: url(../img/tooth.JPG);
@@ -81,14 +87,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     &__content {
         
     justify-content: center;
-        text-transform: uppercase;
-        font-size: 110px;
-        color: #000;
-        text-align: center;
-        
-        font-family: 'antonio';
-        letter-spacing: 10px;
-
+    text-transform: uppercase;
+    font-size: 110px;
+    color: #000;
+    text-align: center;      
+    font-family: 'antonio';
+    letter-spacing: 10px;
     }
 
     &__title {
@@ -99,19 +103,101 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 
     &__undertitle {
-        
+      
     }
+
+    
 }
 
 
-@media only screen and (max-width:600px){
+
+@media only screen and (max-width:768px){
     div.main__content{
-        font-size: 40px;
+    font-size: 40px;
         
     }
 }
 .service{
-    display: flex;
+    
     height: 100%;
     width: 100%;
+    
+	&__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	}
+	&__title {
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'montserrat';
+	}
+    &__title h1{
+        font-size: 30px;
+        color: rgb(255, 217, 0);
+    }
+    &__title h3{
+    margin-top: 20px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    }
+    &__title::after {
+    display: block;
+    content: '';
+    width: 80px;
+    height: 1px;
+    background: black;
+    margin: 30px auto 0;
+	}
+
+    &__wrap {
+    font-family: 'montserrat';
+    margin-top: 20px;
+    text-align: center;
+    width: 300px;
+    align-self: center;
+	}
+    &__wrap h1{
+        font-size: 25px;
+        margin-top: 20px;
+        color: rgb(255, 217, 0);
+    }
+    &__wrap p{
+    text-align: left;
+    margin-top: 20px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    }
+    
+
+    &__img {
+    border: #000 3px solid;
+    border-radius: 50%;
+	}
+    &__wrap li{
+        font-family: 'montserrat';
+        font-size: 18px;
+        text-align: left;
+        list-style-type: disc;
+        font-weight: 300;
+        list-style-position: inside;
+        margin-bottom: 10px;
+    }
+    &__wrap:after {
+        display: block;
+        content: '';
+        width: 80px;
+        height: 1px;
+        background: black;
+        margin: 30px auto 0;
+        }
 }
+
+
+
+

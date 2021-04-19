@@ -12,19 +12,20 @@
     <!---topbar-->
     <div class="topbar">
         <div class="topbar__content" id="myTopbar">               
-        <a href="#home" class="topbar__link"><span class="topbar__item">Home</span></a>
-        <a href="#service" class="topbar__link">Service</a>
-        <a href="#" class="topbar__link">Works</a>
-        <a href="#" class="topbar__link">Contacts</a>
+        <a href="#home" class="topbar__link"><span class="topbar__item">Головна</span></a>
+        
+        <a href="#service" class="topbar__link">Послуги</a>
+        <a href="#" class="topbar__link">Роботи</a>
+        <a href="#" class="topbar__link">Контакти</a>
         <a href="javascript:void(0);" onclick="myFunction()" class="topbar__icon"><i class="fas fa-bars"></i></a>
         </div>
         <script>
         function myFunction(){
             var x = document.getElementById("myTopbar");
-            if (x.className === "topbar") {
+            if (x.className === " topbar") {
               x.className += " responsive";
             } else {
-              x.className = "topbar";
+              x.className = " topbar";
             }
           }</script>
     </div>
@@ -37,11 +38,34 @@
             <div class="main__undertitle">
                 <p>Dental service</p>  
             </div> 
+            
         </div>
+        
+        
     </div>
+    
     <!--service-->
     <div class="service" id="service">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse et laboriosam id, magnam expedita odio necessitatibus quo molestias quas incidunt provident cupiditate porro amet consequuntur rem animi saepe iure autem.</p>
+        <div class="service__content">
+            <div class="service__title">
+                <h1>Послуги</h1>
+                <h3>"Якість.Гармонія здоров'я та краси.Високі стандарти обслуговування та досягнення максимального результату..."</h3>
+            </div>
+            <div class="service__blocks">
+                <div class="service__wrap">
+                    <img class="service__img" src="img/png/dental.png" alt="ooops" width="100px" height="100px">
+                    <h1>Консультація</h1>
+                    <p>Діагностика загального стану ротової порожнини:</p>    
+                    
+                    <li>Зовнішньо та внутрішньоротовий фотопротокол</li>
+                    <li>Огляд та оцінка окремо кожного зуба і м'яких тканин всередині та навколо рота</li>
+                    <li>Рентген-діагностика</li>
+                    <li>Складання поетапного плану лікування </li>
+                                 
+                </div>
+                </div>
+        </div>
+
     </div>
 </body>
 </html>

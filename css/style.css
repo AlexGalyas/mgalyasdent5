@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 .topbar {
   position: fixed;
   width: 100%;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.503);
 }
 
 .topbar__content {
@@ -128,6 +128,9 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     text-align: left;
   }
+  div.topbar__link {
+    font-size: 15px;
+  }
 }
 
 .main {
@@ -170,17 +173,105 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   div.main__content {
     font-size: 40px;
   }
 }
 
 .service {
+  height: 100%;
+  width: 100%;
+}
+
+.service__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service__title {
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'montserrat';
+}
+
+.service__title h1 {
+  font-size: 30px;
+  color: #ffd900;
+}
+
+.service__title h3 {
+  margin-top: 20px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.service__title::after {
+  display: block;
+  content: '';
+  width: 80px;
+  height: 1px;
+  background: black;
+  margin: 30px auto 0;
+}
+
+.service__wrap {
+  font-family: 'montserrat';
+  margin-top: 20px;
+  text-align: center;
+  width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.service__wrap h1 {
+  font-size: 25px;
+  margin-top: 20px;
+  color: #ffd900;
+}
+
+.service__wrap p {
+  text-align: left;
+  margin-top: 20px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.service__img {
+  border: #000 3px solid;
+  border-radius: 50%;
+}
+
+.service__wrap li {
+  font-family: 'montserrat';
+  font-size: 18px;
+  text-align: left;
+  list-style-type: disc;
+  font-weight: 300;
+  list-style-position: inside;
+  margin-bottom: 10px;
+}
+
+.service__wrap:after {
+  display: block;
+  content: '';
+  width: 80px;
+  height: 1px;
+  background: black;
+  margin: 30px auto 0;
 }
 /*# sourceMappingURL=style.css.map */
