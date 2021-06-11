@@ -247,6 +247,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         position: relative;
         margin:auto;
 	}
+
     &__grid::after{
         content: "";
         display: table;
@@ -296,6 +297,30 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
             width: 100%;
         }
       }
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+    text-align: center;
+}
+.contacts p{
+    text-align: center;
+   
+}
+.contacts span{
+    
+    font-weight: 700;
+    color: rgb(255, 217, 0);
 }
 
 
