@@ -217,7 +217,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 50%;
     width: 100%;
     height: 500px;
 
@@ -266,7 +266,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 	&__slide {
 	  float: left;
-      width: 33%;
+      width: 33.33%;
       padding: 10px;
     }
     &__slide img{
@@ -333,14 +333,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     font-weight: 700;
     color: rgb(255, 217, 0);
 }
-.img2{
+.card{
     background-image: url(../img/img2.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 500px;
-    background-position: center;
+    background-position: 50% 50%;
 }
 
 
