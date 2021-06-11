@@ -224,12 +224,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 500px;
-    
+    height: 500px; 
 }
+
 @media screen and(max-width:1024px) {
     div.img{
-        background-position:center;
+        display: none;
     }
 }
                                             //works
