@@ -19,6 +19,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 
 .topbar {
+    z-index: 1;
     position: fixed;
     width: 100%;
     background-color:rgba(0, 0, 0, 0.503);   ;
@@ -49,6 +50,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         padding: 8px;
     }
 }
+@media screen and (max-width: 768px) {
+
+    div.topbar__content{
+        font-size: 10px;
+    }
+  }
 @media screen and (max-width: 600px) {
     .topbar a:not(:first-child) {display: none;}
     .topbar a.topbar__icon {
@@ -73,6 +80,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         font-size: 15px;
     }
   }
+                                              //main
 .main {
     background-image: url(../img/tooth.JPG);
     background-repeat: no-repeat;
@@ -117,9 +125,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         
     }
 }
+                                            //service
 .service{
     
-    height: 100%;
+    height: auto;
     width: 100%;
     
 	&__content {
@@ -151,14 +160,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     height: 1px;
     background: black;
     margin: 30px auto 0;
-	}
 
+	}
+    &__blocks{
+        display: flex;
+        flex-direction: row;
+    }
+    
     &__wrap {
     font-family: 'montserrat';
     margin-top: 20px;
     text-align: center;
     width: 300px;
     align-self: center;
+    margin-left: 50px;
 	}
     &__wrap h1{
         font-size: 25px;
@@ -188,15 +203,103 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         list-style-position: inside;
         margin-bottom: 10px;
     }
-    &__wrap:after {
+
+}
+@media only screen and (max-width:1024px){
+    div.service__blocks{
+    display: flex;
+    flex-direction: column; 
+    }
+}
+                                            //works
+.works {
+    z-index: 0;
+    font-family: 'montserrat';
+    background-color: #fff;
+    height: 100%;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__content:before {
         display: block;
         content: '';
         width: 80px;
         height: 1px;
         background: black;
         margin: 30px auto 0;
+    }
+
+    &__card {
+        font-weight: 400;
+        color: #000;
+        font-size: 20px;
+        text-align: center;
+    }
+    &__card img {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.342);
+        margin-top: 20px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+	&__img {
+        max-width: 1000px;
+        position: relative;
+        margin:auto;
+	}
+    &__grid::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+	&__slide {
+	  float: left;
+      width: 33%;
+      padding: 10px;
+    }
+    &__slide img{
+        opacity: 0.8;
+        cursor: pointer;
+
+    }
+    &__slide img:hover{
+        opacity: 1;
+        box-shadow: 0px 3px 20px #000;    
+    }
+    &__container {
+        position: relative;
+        display: none;
+        width: 1250px;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: #fff;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    #imgtext{
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: #fff;
+        font-size: 20px;
+    }   
+    @media only screen and (max-width: 600px) {
+        div.works__slide img{
+            height: 100px;
+            width: 100px;
         }
+        div.works__container{
+            width: 100%;
+        }
+      }
 }
+
+
+
 
 
 

@@ -7,6 +7,7 @@
     <title>Стоматологічні послуги</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/c60c4778b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
     <!---topbar-->
@@ -15,7 +16,7 @@
         <a href="#home" class="topbar__link"><span class="topbar__item">Головна</span></a>
         
         <a href="#service" class="topbar__link">Послуги</a>
-        <a href="#" class="topbar__link">Роботи</a>
+        <a href="#works" class="topbar__link">Роботи</a>
         <a href="#" class="topbar__link">Контакти</a>
         <a href="javascript:void(0);" onclick="myFunction()" class="topbar__icon"><i class="fas fa-bars"></i></a>
         </div>
@@ -37,11 +38,8 @@
             </div>
             <div class="main__undertitle">
                 <p>Dental service</p>  
-            </div> 
-            
+            </div>   
         </div>
-        
-        
     </div>
     
     <!--service-->
@@ -56,16 +54,72 @@
                     <img class="service__img" src="img/png/dental.png" alt="ooops" width="100px" height="100px">
                     <h1>Консультація</h1>
                     <p>Діагностика загального стану ротової порожнини:</p>    
-                    
                     <li>Зовнішньо та внутрішньоротовий фотопротокол</li>
                     <li>Огляд та оцінка окремо кожного зуба і м'яких тканин всередині та навколо рота</li>
                     <li>Рентген-діагностика</li>
-                    <li>Складання поетапного плану лікування </li>
-                                 
+                    <li>Складання поетапного плану лікування </li>             
+                </div>
+                <div class="service__wrap">
+                    <img class="service__img" src="img/png/dental.png" alt="ooops" width="100px" height="100px">
+                    <h1>Профілактика</h1>
+                    <p>Діагностика загального стану ротової порожнини:</p>    
+                    <li>Зовнішньо та внутрішньоротовий фотопротокол</li>
+                    <li>Огляд та оцінка окремо кожного зуба і м'яких тканин всередині та навколо рота</li>
+                    <li>Рентген-діагностика</li>
+                    <li>Складання поетапного плану лікування </li>             
+                </div>
+                <div class="service__wrap">
+                    <img class="service__img" src="img/png/dental.png" alt="ooops" width="100px" height="100px">
+                    <h1>Терапивчтина стоматологія</h1>
+                    <p>Діагностика загального стану ротової порожнини:</p>    
+                    <li>Зовнішньо та внутрішньоротовий фотопротокол</li>
+                    <li>Огляд та оцінка окремо кожного зуба і м'яких тканин всередині та навколо рота</li>
+                    <li>Рентген-діагностика</li>
+                    <li>Складання поетапного плану лікування </li>             
+                </div>
+                <div class="service__wrap">
+                    <img class="service__img" src="img/png/dental.png" alt="ooops" width="100px" height="100px">
+                    <h1>Ортопедична стоматологія</h1>
+                    <p>Діагностика загального стану ротової порожнини:</p>    
+                    <li>Зовнішньо та внутрішньоротовий фотопротокол</li>
+                    <li>Огляд та оцінка окремо кожного зуба і м'яких тканин всередині та навколо рота</li>
+                    <li>Рентген-діагностика</li>
+                    <li>Складання поетапного плану лікування </li>             
                 </div>
                 </div>
         </div>
-
     </div>
+    <!--works-->
+    <div class="works" id="works">
+        <div class="works__content">
+            <div class="works__card">
+                <img src="img/kolya.JPG" alt="oka" width="200px" height="200px">
+                <h1>Галяс <br> Микола Олександрвич</h1>
+                
+            </div>
+            <div class="works__grid">
+                    <div class="works__slide"> 
+                        <img src="img/works/IMG_1923.JPG" width="400px" height="400px" alt="Гігієна молодого пацієнта" onclick="myFunction(this);">
+                    </div>
+                    <div class="works__slide">
+                        <img src="img/works/IMG_1930.JPG" width="400px" height="400px" alt="Гігієна" onclick="myFunction(this);">
+                    </div>
+                    <div class="works__slide">
+                        <img src="img/works/IMG_1934.JPG" width="400px" height="400px" alt="Гігієна" onclick="myFunction(this);" >
+                    </div>
+                </div>
+                <div class="works__container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width: 100%;" >
+                    
+                    <div id="imgtext"></div>
+                </div>
+                </div>
+            </div>
+    <!--contacts-->
+    <div class="contacts">
+        item
+    </div>
+            <script src="js/main.js"></script>
 </body>
 </html>
